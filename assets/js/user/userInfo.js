@@ -28,6 +28,7 @@ $(function () {
         initUserInfo();
     })
     $('.layui-form').on('submit',function(e){
+        // console.log($(this).serialize());
         e.preventDefault();
         $.ajax({
             method:'POST',
@@ -35,7 +36,7 @@ $(function () {
             data:$(this).serialize(),
             success:function(res){
                 if(res.status!==0){
-                    return console.log(res.message);
+                    return layer.msg(res.message);
                 }
                 layer.msg(res.message);
                 window.parent.getUserInfo();//调用父页面方法

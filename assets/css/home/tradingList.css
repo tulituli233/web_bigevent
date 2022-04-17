@@ -1,0 +1,18 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background: #F2F3F5;
+}
+.buyColour{
+    border: 1px solid #FF5722;
+    color: #FF5722;
+}
+.supBrief{
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+}

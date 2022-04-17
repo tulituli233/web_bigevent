@@ -56,3 +56,9 @@ a {
     color: #fff;
     margin-right: 10px;
 }
+.user1{
+    display: none!important;
+}
+.hicon{
+    margin-left: 0;
+}

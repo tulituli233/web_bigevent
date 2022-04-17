@@ -9,6 +9,7 @@ $.ajaxPrefilter(function (options) {
         // alert('no');
         if (res.responseJSON.status === 1&&res.responseJSON.message==='获取用户信息失败！') {
             localStorage.removeItem('token');
+            localStorage.removeItem('leixing');
             location.href = './login.html';
         }
     }

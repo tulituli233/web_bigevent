@@ -15,11 +15,11 @@
         <div class="layui-card-header">修改用户信息</div>
         <div class="layui-card-body">
             <form class="layui-form" action="" lay-filter="formUserInfo">
-                <input type="hidden" name="id">
+                <!-- <input type="hidden" name="id"> -->
                 <div class="layui-form-item">
                     <label class="layui-form-label">登录名称</label>
                     <div class="layui-input-block">
-                        <input type="text" name="username" required lay-verify="required" placeholder="请输入登录名称"
+                        <input type="text" name="name" required lay-verify="required" placeholder="请输入登录名称"
                             autocomplete="off" class="layui-input" readonly>
                     </div>
                 </div>
@@ -31,9 +31,16 @@
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label class="layui-form-label">用户邮箱</label>
+                    <label class="layui-form-label">用户地址</label>
                     <div class="layui-input-block">
-                        <input type="text" name="email" required lay-verify="required|email" placeholder="请输入用户邮箱"
+                        <input type="text" name="address" required lay-verify="required" placeholder="请输入用户邮箱"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">用户电话</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="phone" required lay-verify="required" placeholder="请输入用户邮箱"
                             autocomplete="off" class="layui-input">
                     </div>
                 </div>

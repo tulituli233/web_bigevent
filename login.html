@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大事件-登录/注册</title>
+    <title>零件交易管理系统-登录/注册</title>
     <link rel="stylesheet" href="./assets/css/login.css">
     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
 </head>
 <body>
     <div class="layui-main">
-        <img src="./assets/images/logo.png" alt="">
+        <img src="./assets/images/零件交易.png" alt="">
     </div>
     <div class="loginAndRegBox">
         <div class="title-box"></div>
         <!-- 登录 -->
         <div class="login-box">
             <form class="layui-form" id="form_login">
+                <div class="layui-form-item">
+                    <select name="leixing" lay-verify="required">
+                        <option value="">请选择您的身份</option>
+                        <option value="1">我是供应商</option>
+                        <option value="2">我是顾客</option>
+                        <option value="3">我是交易员</option>
+                      </select>    
+                </div>
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-face-smile layui-icon-username"></i>   
                     <input type="text" name="username" lay-verify="required"
@@ -39,6 +47,13 @@
         <!-- 注册 -->
         <div class="reg-box">
             <form class="layui-form" id="form_reg">
+                <div class="layui-form-item">
+                    <select name="leixing" lay-verify="required">
+                        <option value="">请选择您的身份</option>
+                        <option value="1">我是供应商</option>
+                        <option value="2">我是顾客</option>
+                      </select>    
+                </div>
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-face-smile layui-icon-username"></i>   
                     <input type="text" name="username" lay-verify="required" 
